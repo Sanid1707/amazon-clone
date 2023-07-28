@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Header from "./Header";
+import Home from "./Home";
 
 function App() {
   return (
@@ -8,8 +9,7 @@ function App() {
       {/* using bem convention , which is a reall7y good way to name your css */}
 
       <Header />
-      {/* {header} */}
-      {/* {home} */}
+      <Home />
     </div>
   );
 }
