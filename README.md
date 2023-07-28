@@ -1,5 +1,8 @@
 # amazon-clone
 
-techno used 
-React 
-firebase to host 
+# Lessions
+
+1.Intro
+2.Install Tools
+3.Create Ract App
+4.Creae Git Repo
