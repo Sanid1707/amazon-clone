@@ -1,33 +1,40 @@
 import { Link } from "react-router-dom";
-import data from "../data";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function HomeScreen() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios.get("/api/products");
+      setProducts(result.data); // Store the data array from the response
+    };
+    fetchData();
+  }, []);
+
   return (
     <div>
-      <h1>
-        <h1>Featured products</h1>
+      <h1>Featured products</h1>
 
-        <div className="products">
-          {data.products.map((product) => (
-            <div className="product" key={product.slug}>
+      <div className="products">
+        {products.map((product) => (
+          <div className="product" key={product.slug}>
+            <Link to={`/product/${product.slug}`}>
+              <img src={product.image} alt={product.name} />
+            </Link>
+            <div className="product-info">
               <Link to={`/product/${product.slug}`}>
-                <img src={product.image} alt={product.name} />
+                <p>{product.name}</p>
               </Link>
-              <div className="product-info">
-                {/* wrinting  a jsx inside the brackets  */}
-                <Link to={`/product/${product.slug}`}>
-                  <p>{product.name}</p>
-                </Link>
-                {/* I used <a href before link but that would eleminate the fact that we are making  a single page   application */}
-                <p>
-                  <strong>${product.price}</strong>
-                </p>
-                <button>add to cart</button>
-              </div>
+              <p>
+                <strong>${product.price}</strong>
+              </p>
+              <button>add to cart</button>
             </div>
-          ))}
-        </div>
-      </h1>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
