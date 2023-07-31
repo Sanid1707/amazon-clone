@@ -12,13 +12,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.site-container {
+  min-height: 100vh;
 }
-.main {
-  padding: 1rem;
+
+main {
+  flex: 1;
 }
+
 .products {
   display: flex;
   flex-wrap: wrap;

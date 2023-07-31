@@ -1,21 +1,31 @@
 import "./App.css";
 import React from "react";
-import Header from "./Header";
+// import Header from "./Header";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import data from "./data";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
-import { Container } from "@mui/material";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import { LinkContainer } from "react-router-bootstrap";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="d-flex flex-column site-container"></div>
-      <div className="app">
+      <div className="d-flex flex-column site-container">
+        {/* <div className="app"> */}
         {/* using bem convention , which is a reall7y good way to name your css */}
 
-        <Header />
-
+        <header>
+          <Link to="/"></Link>
+          <Navbar bg="dark" variant="dark">
+            <Container>
+              <LinkContainer to="/">
+                <Navbar.Brand>amazona</Navbar.Brand>
+              </LinkContainer>
+            </Container>
+          </Navbar>
+        </header>
         <main>
           <Container>
             <Routes>
@@ -27,6 +37,7 @@ function App() {
         <footer>
           <div className="text-center">All rights reserved.</div>
         </footer>
+        {/* </div> */}
       </div>
     </BrowserRouter>
   );

@@ -42,3 +42,7 @@
    define reducer hook
    update fetch data
    get stage from usereducer
+
+10. add bootstrap UI framework
+    1.npm install react-bootstrap
+    2.updatw app.js
