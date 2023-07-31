@@ -17,7 +17,7 @@
    2.create route for home screen
    3 create route for product screen
 
-7.Create Node.js server
+7. Create Node.js server
 
 1 run npm init in root folder
 2 Update package .json set type
@@ -46,3 +46,8 @@
 10. add bootstrap UI framework
     1.npm install react-bootstrap
     2.updatw app.js
+
+11. Create Product and Rating Component
+    create Rating component
+    Create Product component
+    Use Rating component in Product component
