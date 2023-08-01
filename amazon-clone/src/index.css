@@ -20,6 +20,12 @@ main {
   flex: 1;
 }
 
+.btn-primary {
+  background-color: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -36,6 +42,10 @@ main {
   max-width: 400px;
 }
 
-.product-info {
-  padding: 1rem;
+.rating span {
+  color: rgb(114, 107, 15);
+}
+
+.img-large {
+  max-width: 100%;
 }
