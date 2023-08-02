@@ -60,3 +60,9 @@
     1.Create loading component
     2.use spinner component
     3.create message component 4. create utils.jd to define get error message component
+
+14. Implement add to cart
+    create react coontext
+    define reducer function
+    create sstore provider
+    implement add to cart button on click
