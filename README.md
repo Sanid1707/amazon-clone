@@ -55,3 +55,8 @@
 12. Create product screen
     fetch Products from backend
     create 3 colums for image info and action
+
+13. Create Loading and message component
+    1.Create loading component
+    2.use spinner component
+    3.create message component 4. create utils.jd to define get error message component
