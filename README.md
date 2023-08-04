@@ -66,3 +66,6 @@
     define reducer function
     create sstore provider
     implement add to cart button on click
+15. Complete add to cart
+    check exist item in the cart
+    check count in stock in backend
