@@ -1,7 +1,8 @@
-# amazon-clone
+![giphy](https://raw.githubusercontent.com/Sanid1707/Laravel-ProjectCA2/main/public/images/readme.gif)
 
-# Lessions
+E Commerce Webpage 
 
+Steps Taken in the procrss to built the webpage 
 1. Intro
 
 2. Install Tools
